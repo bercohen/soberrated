@@ -1,0 +1,29 @@
+
+ <h2>Ingrediants</h2>
+ <ul>
+<%@result["drinks"].each do |key|%>
+	<li><%=key["strIngredient1"]%></li>
+	<li><%=key["strIngredient2"]%></li>
+	<li><%=key["strIngredient3"]%></li>
+	<li><%=key["strIngredient4"]%></li>
+	<li><%=key["strIngredient5"]%></li>
+	<li><%=key["strIngredient6"]%></li>
+	<li><%=key["strIngredient7"]%></li>
+	<li><%=key["strIngredient8"]%></li>
+	<li><%=key["strIngredient9"]%></li>
+
+<%end%>
+</ul>
+
+<h2>Instructions</h2>
+	<%=@result["drinks"][0]["strInstructions"]%>
+
+
+	<%=@result["drinks"]%>
+
+
+
+
+
+	
+	
