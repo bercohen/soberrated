@@ -44,7 +44,7 @@
 <% else %>
 	<ol>
  <% @result.each do |drink| %>
- 	<li><%= drink['strDrink'] %></li>
+	<li><%= link_to drink['strDrink'], drink_path(drink['idDrink']) %></li>
  <% end if @result %>
  </ol>
 <%end%>

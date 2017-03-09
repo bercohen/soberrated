@@ -62,11 +62,20 @@ class StaticController < ApplicationController
 
 	def random
 		source = "http://www.thecocktaildb.com/api/json/v1/1/random.php"
-		  resp = Net::HTTP.get_response(URI.parse(source))
+		resp = Net::HTTP.get_response(URI.parse(source))
 	    data = resp.body
 	    p resp
 	    p data
 	    @result = JSON.parse(data)
 	end
 
+	def search
+		source = "http://www.thecocktaildb.com/api/json/v1/1/search.php?s=#{params[:s]}"
+		resp = Net::HTTP.get_response(URI.parse(source))
+	    data = resp.body
+	    p resp
+	    p data
+	    @result = JSON.parse(data)
+	end
 end
+
