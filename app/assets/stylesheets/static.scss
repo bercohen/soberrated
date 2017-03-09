@@ -1,3 +1,39 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+background-color:black !important;
+}
+
+.bottle{
+	height:100px;
+	width:100px;
+	border: 1px solid black;
+	margin:50px;
+	position:inline-block;
+}
+
+.flavor{
+	height:100px;
+	width:100px;
+	border: 1px solid black;
+	margin:50px;
+	position:inline-block;
+}
+
+.sob{
+	font-family: cursive;
+	font-size: 100px;
+	color:white;
+	height:50px;
+	text-align: center;
+
+}
+
+
+.ct{
+	background-image:url("cocktail2.png");
+	height:500px;
+	background-size: cover;
+	
+}
