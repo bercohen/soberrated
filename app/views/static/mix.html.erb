@@ -1,0 +1,50 @@
+<% if !@ingredients || !%w(vodka whiskey gin tequila).include?(@ingredients.first) %>
+
+	<%= content_tag :div, class: :bottle do 
+		link_to 'vodka', mix_path(:i => @ingredients|['vodka']) 
+	end %>
+	
+
+<div class='bottle'>
+	<%=link_to mix_path(:i => @ingredients|['whiskey']) do%>
+	whiskey
+	<%end%>
+</div>
+
+<div class='bottle'>
+	<%=link_to mix_path(:i => @ingredients|['gin']) do%>
+	gin
+	<%end%>
+</div>
+
+<div class='bottle'>
+	<%=link_to mix_path(:i => @ingredients|['tequila']) do%>
+	tequila
+	<%end%>	
+</div>
+<% elsif @ingredients && @ingredients.length == 1 %>
+<div class='flavor'>
+	<%=link_to mix_path(:i => @ingredients|['orange juice']) do%>
+	summery
+	<%end%>	
+</div>
+
+<div class='flavor'>
+	<%=link_to mix_path(:i => @ingredients|['lemon']) do%>
+	sour
+	<%end%>	
+</div>
+
+<div class='flavor'>
+	<%=link_to mix_path(:i => @ingredients|['pineapple juice']) do%>
+	Tropical
+	<%end%>	
+</div>
+
+<% else %>
+	<ol>
+ <% @result.each do |drink| %>
+ 	<li><%= drink['strDrink'] %></li>
+ <% end if @result %>
+ </ol>
+<%end%>

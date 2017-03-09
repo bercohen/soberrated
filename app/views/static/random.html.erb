@@ -1,8 +1,6 @@
+<h2><%=@result["drinks"][0]["strDrink"]%></h2>
 
- <h2>Ingrediants</h2>
 <table>
-
-	<tr></tr>	
 		<th>Ingrediant</th>
 		<th>Measurement</th>
 	</tr>
@@ -27,7 +25,6 @@
 	<tr>
 		<td><%=key["strIngredient5"]%></td>
 		<td><%=key["strMeasure5"]%></td>
-
 	</tr>
 	<tr>
 		<td><%=key["strIngredient6"]%></td>
@@ -45,23 +42,8 @@
 		<td><%=key["strIngredient9"]%></td>
 		<td><%=key["strMeasure9"]%></td>
 	</tr>
-		
+
 	<%end%>
-</table>
-
+</table>	
 <h2>Instructions</h2>
-	<%=@result["drinks"][0]["strInstructions"]%>
-
-	
-
-	
-
-
-
-
-
-
-
-
-	
-	
+<%=@result["drinks"][0]["strInstructions"]%>
