@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'drink/:id' => 'static#show', as: 'drink'
   get 'random' => 'static#random'
   get 'mix'=> 'static#mix'
+  post 'search' => 'static#search'
 end

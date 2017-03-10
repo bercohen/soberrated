@@ -25,3 +25,6 @@
 		link_to 'What do you like to drink?', mix_path
 		end %>
 
+		<%= content_tag :div, class: :bottle do 
+		link_to 'Home', root_path
+		end %>
