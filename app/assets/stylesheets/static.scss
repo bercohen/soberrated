@@ -6,12 +6,114 @@ background-color:black !important;
 }
 
 .bottle{
-	height:100px;
-	width:100px;
-	border: 1px solid black;
-	margin:50px;
-	position:inline-block;
+    display: inline-block;
+    margin:90px 0px 0px 90px;
 }
+
+#bottle1{
+    background-image:url("vodka.png");
+	background-size:contain;
+    height:180px;
+    width:100px;
+}
+
+#bottle2{
+    background-image:url("bourbon.png");
+    background-size:cover;
+    height:170px;
+    width:100px;
+}
+
+#bottle3{
+    background-image:url("scotch.png");
+    background-size:cover;
+    height:180px;
+    width:100px;
+}
+
+#bottle4{
+    background-image:url("rum.png");
+    background-size:cover;
+    height:180px;
+    width:150px;
+}
+#bottle5{
+    background-image:url("gin.png");
+    background-size:cover;
+    height:180px;
+    width:150px;
+}
+
+#bottle6{
+    background-image:url("tequila.png");
+    background-size:cover;
+    height:180px;
+    width:190px;
+}
+#flavor1{
+    background-image:url("orange.png");
+    background-size:cover;
+    height:180px;
+    width:200px;
+}
+
+#flavor2{
+    background-image:url("lemon.png");
+    background-size:cover;
+    height:180px;
+    width:200px;
+}
+
+#flavor3{
+    background-image:url("Pineapple2.png");
+    background-size:cover;
+    height:160px;
+    width:100px;
+}
+
+#flavor4{
+    background-image:url("lime2.png");
+    background-size:contain;
+    height:80px;
+    width:100px;
+}
+
+.list{
+	color:white;
+	font-family:cursive;
+    font-size: 40px;
+	
+}
+
+#bev{
+	color:white;
+	margin-left: 30%;
+}
+#bev2{
+    color:white;
+    margin-left: 30%;
+}
+
+.rand{
+    color:white;
+    margin-left:30%;
+    font-size: 40px;
+}
+
+.inst1{
+    color:white;
+    margin-left:30%;
+    font-size: 40px;
+}
+
+
+.inst{
+    color:white;
+    font-family: cursive;
+    font-size: 20px;
+    margin-left:30%;
+}
+
 
 .flavor{
 	height:100px;
@@ -73,6 +175,4 @@ background-color:black !important;
         color:#D9230F;
     }
  
-    .search-query:focus + button {
-        z-index: 3;   
-    }
+    .search-query:focus + button {z-index: 3; }

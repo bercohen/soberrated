@@ -1,1 +1,10 @@
-<%=@result%>
+
+	<div class='list'>
+		<ol>
+			<% @result['drinks'].each do |drink| %>
+			<li>
+			<%= link_to drink['strDrink'], drink_path(drink['idDrink'])%>
+			</li>
+			<%end%>
+		</ol>
+	</div>

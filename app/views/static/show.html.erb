@@ -1,6 +1,7 @@
-
- <h2>Ingrediants</h2>
-<table>
+<div class ='bev'>
+<div class='inst1'><%=@result["drinks"][0]["strDrink"]%></div>
+ <h2 class="inst1">Ingrediants</h2>
+ <table id="bev">
 
 	<tr></tr>	
 		<th>Ingrediant</th>
@@ -49,11 +50,13 @@
 	<%end%>
 </table>
 
-<h2>Instructions</h2>
+
+<h2 class="inst1">Instructions</h2>
+<div class="inst">
 	<%=@result["drinks"][0]["strInstructions"]%>
-
+</div>
 	
-
+</div>
 	
 
 

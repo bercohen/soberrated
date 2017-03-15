@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'random' => 'static#random'
   get 'mix'=> 'static#mix'
   get 'choose'=> 'static#choose'
+
   post 'search' => 'static#search'
 end
