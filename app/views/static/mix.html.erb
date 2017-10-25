@@ -1,4 +1,5 @@
-<% if !@ingredients || !%w(vodka whiskey gin tequila Bourbon Scotch Rum).include?(@ingredients.first) %>
+<% if !@ingredients || !%w(vodka whiskey gin tequila Bourbon Scotch Rum Beer Wine Cognac).include?(@ingredients.first) %>
+<h1> Choose Your Base</h1>
 
 <%=link_to mix_path(:i => @ingredients|['vodka']) do%>
 	<div class="bottle" id='bottle1'>
@@ -30,12 +31,34 @@
 <%=link_to mix_path(:i => @ingredients|['tequila']) do%>
 	<div class="bottle" id='bottle6'>
 		</div>
-	
-<%end%>	
+<%end%>
+
+<%=link_to mix_path(:i => @ingredients|['Beer']) do%>
+	<div class="bottle" id='bottle6'>
+		</div>
+<%end%>
+
+<%=link_to mix_path(:i => @ingredients|['Wine']) do%>
+	<div class="bottle" id='bottle6'>
+		</div>
+<%end%>
+
+<%=link_to mix_path(:i => @ingredients|['Cognac']) do%>
+	<div class="bottle" id='bottle6'>
+		</div>
+<%end%>
+
 
 <% elsif @ingredients && @ingredients.length == 1 %>
 
+<h1> Choose Your Twist </h1>
+
 <%=link_to mix_path(:i => @ingredients|['orange juice']) do%>
+	<div class="bottle" id='flavor1'>
+	</div>	
+<%end%>	
+<!-- trial -->
+<%=link_to mix_path(:i => @ingredients|['sugar']) do%>
 	<div class="bottle" id='flavor1'>
 	</div>	
 <%end%>	
@@ -57,13 +80,22 @@
 <%end%>	
 
 
-
-<% else %>
+<!-- trial -->
+<% elsif @result.length > 0 %>
 <div class='list'>
 	<ol>
 	 <% @result.each do |drink| %>
 		<li><%= link_to drink['strDrink'], drink_path(drink['idDrink']) %></li>
  	<% end if @result %>
  	</ol>
-	<%end%>
-</div>
+<%else%>
+	<h1> There are no drinks </h1>
+
+	<h2><%=link_to 'Try again', mix_path%></h2>
+	</div>	
+	
+<%end%>
+</div> 
+
+
+

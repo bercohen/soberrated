@@ -28,3 +28,23 @@
 		<%= content_tag :div, class: :bottle do 
 		link_to 'Home', root_path
 		end %>
+
+
+		<!-- original -->
+<!-- 
+<% else %>
+<div class='list'>
+	<ol>
+	 <% @result.each do |drink| %>
+		<li><%= link_to drink['strDrink'], drink_path(drink['idDrink']) %></li>
+ 	<% end if @result %>
+ 	</ol>
+	<%end%>
+</div> -->
+
+
+<!-- 
+<%else%> <h2> sorry </h2>
+	<<h2><%= link_to "Home", root_path%></h2>  -->
+
+	 <!-- <%if @result.length > 1%>-->

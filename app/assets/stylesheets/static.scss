@@ -1,8 +1,17 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+
+
 body{
 background-color:black !important;
+}
+
+.drinkpic{
+    height:200px;
+    width:200px;
 }
 
 .bottle{
@@ -127,7 +136,7 @@ background-color:black !important;
 	font-family: cursive;
 	font-size: 100px;
 	color:white;
-	height:50px;
+	// height:25vh;
 	text-align: center;
 
 }
@@ -135,8 +144,12 @@ background-color:black !important;
 
 .ct{
 	background-image:url("cocktail2.png");
-	height:500px;
-	background-size: cover;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+	height:100vh;
+    margin-top: -24vh;
+	margin-left:23vw;
 	
 }
 

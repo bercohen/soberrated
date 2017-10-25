@@ -1,10 +1,24 @@
-
-	<div class='list'>
-		<ol>
+<%if !@result['drinks'].nil?%>
+<div class='list'>
+		<ul>
 			<% @result['drinks'].each do |drink| %>
 			<li>
 			<%= link_to drink['strDrink'], drink_path(drink['idDrink'])%>
 			</li>
+
 			<%end%>
-		</ol>
-	</div>
+		</ul>
+<%else%> <h2> sorry </h2>
+	<h2><%= link_to "Home", root_path%></h2> 
+		
+</div>
+
+
+
+
+<%end%>
+
+
+
+
+
