@@ -1,101 +1,185 @@
-<% if !@ingredients || !%w(vodka whiskey gin tequila Bourbon Scotch Rum Beer Wine Cognac).include?(@ingredients.first) %>
-<h1> Choose Your Base</h1>
+<%if !@ingredients || !%w(vodka whiskey gin tequila Bourbon Scotch Light\ Rum ).include?(@ingredients.first) %>
 
-<%=link_to mix_path(:i => @ingredients|['vodka']) do%>
-	<div class="bottle" id='bottle1'>
-	</div>
-<%end%>
-	
-<%=link_to mix_path(:i => @ingredients|['Bourbon']) do%>
-	<div class="bottle" id='bottle2'>
-	</div>
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['Scotch']) do%>
-	<div class="bottle" id='bottle3'>
-	</div>
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['Rum']) do%>
-	<div class="bottle" id='bottle4'>
-	</div>	
-
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['gin']) do%>
-	<div class="bottle" id='bottle5'>
-	</div>
-	
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['tequila']) do%>
-	<div class="bottle" id='bottle6'>
-		</div>
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['Beer']) do%>
-	<div class="bottle" id='bottle6'>
-		</div>
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['Wine']) do%>
-	<div class="bottle" id='bottle6'>
-		</div>
-<%end%>
-
-<%=link_to mix_path(:i => @ingredients|['Cognac']) do%>
-	<div class="bottle" id='bottle6'>
-		</div>
-<%end%>
+<h2 class="inst2"> Pick Your Poison</h2>
 
 
-<% elsif @ingredients && @ingredients.length == 1 %>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="5"></li> -->
+    </ol>   
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item active">
+        	<%=link_to mix_path(:i => @ingredients|['vodka']) do%>
+            <div class="bottle" id='bottle1'></div>
+            <%end%>
+        </div>
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['Scotch']) do%>
+			<div class="bottle" id='bottle3'></div>
+ 			<%end%>
+        </div>
+        <div class="item">
+           <%=link_to mix_path(:i => @ingredients|['Light Rum']) do%>	
+            	<div class="bottle" id='bottle4'></div>	
+		 <%end%>
+        </div>
+        <div class="item">
+           <%=link_to mix_path(:i => @ingredients|['gin']) do%>
+			<div class="bottle" id='bottle5'></div>
+			<%end%>
+        </div>
+        <div class="item">
+           <%=link_to mix_path(:i => @ingredients|['tequila']) do%>
+ 			<div class="bottle" id='bottle6'></div>
+		<%end%>
+        </div>
 
-<h1> Choose Your Twist </h1>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
 
-<%=link_to mix_path(:i => @ingredients|['orange juice']) do%>
-	<div class="bottle" id='flavor1'>
-	</div>	
-<%end%>	
-<!-- trial -->
-<%=link_to mix_path(:i => @ingredients|['sugar']) do%>
-	<div class="bottle" id='flavor1'>
-	</div>	
-<%end%>	
-
-<%=link_to mix_path(:i => @ingredients|['lemon']) do%>
-	<div class="bottle" id='flavor2'>
-	</div>
-<%end%>	
-
-<%=link_to mix_path(:i => @ingredients|['pineapple juice']) do%>
-
-	<div class="bottle" id='flavor3'>
-	</div>
-<%end%>	
-
-<%=link_to mix_path(:i => @ingredients|['lime']) do%>
-	<div class="bottle" id='flavor4'>
-	</div>
-<%end%>	
+<!-- Flavors -->
 
 
-<!-- trial -->
+ <% elsif @ingredients && @ingredients.length == 1 %>
+
+ 	 <h2 class="inst2"> Pick Your Punch </h2>
+
+ 	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+    </ol>   
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <%=link_to mix_path(:i => @ingredients|['lime']) do%>
+            <div class="bottle" id='flavor4'></div>
+            <%end%>
+        </div>
+    	<div class="item">
+            <%=link_to mix_path(:i => @ingredients|['lemon']) do%>
+			<div class="bottle" id='flavor2'></div>
+ 			<%end%>	
+        </div>
+        <div class="item">
+        	<%=link_to mix_path(:i => @ingredients|['orange juice']) do%>
+ 			<div class="bottle" id='flavor1'></div>	
+ 			<%end%>
+        </div>
+  
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['apple juice']) do%>
+			<div class="bottle" id='flavor5'></div>
+ 			<%end%>	
+        </div>
+
+        
+        <div class="item">
+           <%=link_to mix_path(:i => @ingredients|['pineapple juice']) do%>
+			<div class="bottle" id='flavor3'></div>
+ 			<%end%>
+        </div>
+
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['sugar']) do%>
+			<div class="bottle" id='flavor6'></div>
+ 			<%end%>	
+        </div>
+
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['bitters']) do%>
+			<div class="bottle" id='flavor7'></div>
+ 			<%end%>	
+        </div>
+
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['sprite']) do%>
+			<div class="bottle" id='flavor8'></div>
+ 			<%end%>	
+        </div>
+
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['coca-cola']) do%>
+ 			<div class="bottle" id='flavor9'></div>
+ 			<%end%>
+        </div>
+
+        <div class="item">
+            <%=link_to mix_path(:i => @ingredients|['ginger ale']) do%>
+			<div class="bottle" id='flavor10'></div>
+ 			<%end%>	
+        </div>
+       
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
 <% elsif @result.length > 0 %>
-<div class='list'>
-	<ol>
-	 <% @result.each do |drink| %>
-		<li><%= link_to drink['strDrink'], drink_path(drink['idDrink']) %></li>
- 	<% end if @result %>
- 	</ol>
-<%else%>
-	<h1> There are no drinks </h1>
+<h2 class="inst3">Here's what we came up with</h2>
+<hr>
+ <div class='list'>
 
-	<h2><%=link_to 'Try again', mix_path%></h2>
-	</div>	
+    <ul>
+            <% @result.each do |drink| %>
+            <li>
+            <%= link_to drink['strDrink'], drink_path(drink['idDrink'])%>
+            </li>
+            <li>
+            <img src=<%=drink["strDrinkThumb"]%> class="drinkpic2">
+            </li>
+
+            <% end if @result %>
+    </ul>
+
+ 	<!-- <ol>
+ 	 <% @result.each do |drink| %>
+		<li><%= link_to drink['strDrink'], drink_path(drink['idDrink']) %></li>
+  	<% end if @result %>
+  	</ol> -->
+<%else%>
+ 	<h2 class="inst1"> Sorry we couldn't get as creative as you</h2>
+
+	<h2 class="home"><%=link_to 'Try again', mix_path%></h2>
+ 	</div>	
 	
-<%end%>
+  <%end%>
 </div> 
+
+
+
+
+
+
 
 
 

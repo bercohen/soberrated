@@ -4,93 +4,275 @@
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
 
+ @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
 
 body{
 background-color:black !important;
+// background-color:black;
+
+}
+a{
+    color:white !important ;
+}
+a:hover{
+ text-decoration: none !important;
+ color:#337ab7 !important;
+}
+
+td, th {
+    padding: 2.5vh;
+    font-size: 20px;
+}
+@media(min-width:440px){
+    hr{
+        display:none;
+    }
+    .inst3{
+        margin-bottom: 5vw;
+    }
+}
+hr{
+    color:white;
+    // width:75% !important;
+    // margin:auto !important;
+    // margin-top: 
+
+}
+
+.home{
+    margin-left: 10%;
+    color:white;
+}
+
+.recipe{
+    // width: 20vw;
+    margin-left: 4vw;
 }
 
 .drinkpic{
-    height:200px;
-    width:200px;
+    height:500px;
+    width:500px;
+    border-radius:10%;
+    border: 1px; 
+    border-color: rgb(254, 20, 106);
+    // margin-left: 2vw;
+    // margin-top: 2vw;
+}
+.drinkpic2{
+    height:100px;
+    width:100px;
+    border-radius:10%;
+    border: 1px; 
+    border-color: rgb(254, 20, 106);
+    margin-bottom: 50px;
+    // margin-left: ;
+    // margin-top: 2vw;
+}
+
+@media(max-width:915px){
+    .drinkpic{
+        height: 400px;
+        width: 400px;
+    }
+
+    .bev2{
+    
+    margin-top: -280px !important;
+    // margin: 10px;
+    }
+}
+
+@media(max-width:770px){
+    .drinkpic{
+        height:90%;
+        width:90%;
+    }
+
+    .bev2{
+    
+    // margin-top: -280px !important;
+    margin: 10px !important;
+    }
+
+    .ct{
+        margin-left: 20vw !important;
+        width:350px;
+    }
+}
+
+.sob{
+    font-family: cursive;
+    font-size: 100px;
+    color:white;
+    // height:25vh;
+    text-align: center;
+
+    }
+
+@media(max-width:550px){
+    .sob{
+        font-size: 75px ;
+    }
+
+    .ct{
+        height:80vh !important ;
+        margin-top: -15vh !important;
+        margin-left:10vw !important;
+        // margin:auto;
+    }
+}
+
+@media (max-width:450px){
+    .sob{
+        font-size: 60px ;
+    }
+    .ct{
+        width:75% !important;
+    }
 }
 
 .bottle{
-    display: inline-block;
-    margin:90px 0px 0px 90px;
+    // display: inline-block;
+    // margin:90px 0px 0px 90px;
+    position: relative;
+    // float: left;
+    width:  40vh;
+    height: 68vh;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    margin: 0 auto;
+    margin-left: 38.5%;
+    // margin-top: 25vh;
+    // height:70vh;
+    // width:40vh;
+    // background-size:cover;
+
 }
+
 
 #bottle1{
     background-image:url("vodka.png");
-	background-size:contain;
-    height:180px;
-    width:100px;
+	// background-size:contain;
+ //     height:60vh;
+ //    width:60vh;
+ //    height:180px;
+ //    width:100px;
 }
 
 #bottle2{
     background-image:url("bourbon.png");
-    background-size:cover;
-    height:170px;
-    width:100px;
+    // background-size:cover;
+    // height:170px;
+    // width:100px;
 }
 
 #bottle3{
     background-image:url("scotch.png");
-    background-size:cover;
-    height:180px;
-    width:100px;
+    // background-size:cover;
+    // height:180px;
+    // width:100px;
 }
 
 #bottle4{
     background-image:url("rum.png");
-    background-size:cover;
-    height:180px;
-    width:150px;
+    // background-size:cover;
+    // height:180px;
+    // width:150px;
 }
 #bottle5{
     background-image:url("gin.png");
-    background-size:cover;
-    height:180px;
-    width:150px;
+    // background-size:cover;
+    // height:180px;
+    // width:150px;
 }
 
 #bottle6{
-    background-image:url("tequila.png");
-    background-size:cover;
-    height:180px;
-    width:190px;
+    background-image:url("tequila2.png");
+    // background-size:cover;
+    // height:180px;
+    // width:190px;
 }
 #flavor1{
-    background-image:url("orange.png");
-    background-size:cover;
-    height:180px;
-    width:200px;
+    background-image:url("orange2.png");
+    background-size:contain;
+    // height:180px;
+    // width:80vh;
+    // margin-left: 25%;
 }
 
 #flavor2{
     background-image:url("lemon.png");
-    background-size:cover;
-    height:180px;
-    width:200px;
+    background-size:contain;
+    // height:180px;
+    width:67vh;
+    margin-left: 34%;
 }
 
 #flavor3{
-    background-image:url("Pineapple2.png");
-    background-size:cover;
-    height:160px;
-    width:100px;
+    background-image:url("pineapple5.png");
+    background-size:contain;
+    // height:160px;
+    // width:55vh;
+    // margin-left: 35vw;
 }
 
 #flavor4{
-    background-image:url("lime2.png");
+    background-image:url("lime5.png");
     background-size:contain;
-    height:80px;
-    width:100px;
+    // height:80px;
+    // width:100px;
 }
 
+#flavor5{
+    background-image:url("apple5.png");
+    background-size:contain;
+    width:60vh;
+    margin-left: 31%;
+
+}
+
+#flavor6{
+    background-image:url("sugar2.png");
+    background-size:contain;
+    // height:80px;
+    // width:100px;
+}
+#flavor7{
+    background-image:url("bitters.png");
+    background-size:contain;
+    // height:80px;
+    // width:100px;
+}
+#flavor8{
+    background-image:url("sprite3.png");
+    background-size:cover;
+    // height:68vh;
+    // width: 30vh;
+    margin-left: 39%;
+    // width:100px;
+}
+#flavor9{
+    background-image:url("coke.png");
+    background-size:cover;
+    // height:80px;
+    // width:100px;
+}
+#flavor10{
+    background-image:url("gingerale2.png");
+    background-size:contain;
+    //  height:68vh;
+    // width: 60vh;
+    // margin-left: 34%;
+    // height:80px;
+    // width:100px;
+}
 .list{
 	color:white;
-	font-family:cursive;
-    font-size: 40px;
+	// font-family:;
+    font-size: 30px;
+    margin-left: 10%;
 	
 }
 
@@ -98,9 +280,11 @@ background-color:black !important;
 	color:white;
 	margin-left: 30%;
 }
-#bev2{
+.bev2{
     color:white;
-    margin-left: 30%;
+    margin-left: 2vw;
+    margin-top: -350px;
+    // margin: 10px;
 }
 
 .rand{
@@ -110,17 +294,40 @@ background-color:black !important;
 }
 
 .inst1{
-    color:white;
-    margin-left:30%;
+    color:rgb(254, 20, 106);
+    font-family: cursive;
+    margin-left:2vw;
     font-size: 40px;
+
 }
+
+.inst2{
+    color:rgb(254, 20, 106);
+    font-family: cursive;
+    margin-left:38vw;
+    font-size: 40px;
+
+}
+
+.inst3{
+    color:rgb(254, 20, 106);
+    font-family: cursive;
+    margin-left:12%;
+    font-size: 40px;
+    // margin-bottom: 5vw;
+
+}
+
+
 
 
 .inst{
     color:white;
     font-family: cursive;
-    font-size: 20px;
-    margin-left:30%;
+    font-size: 25px;
+    margin-left: 2vw;
+   max-width: 90vw;
+   line-height: 50px;;
 }
 
 
@@ -132,14 +339,11 @@ background-color:black !important;
 	position:inline-block;
 }
 
-.sob{
-	font-family: cursive;
-	font-size: 100px;
-	color:white;
-	// height:25vh;
-	text-align: center;
-
+@media(max-width:768px){
+    margin-left: 30vw !important;
 }
+
+
 
 
 .ct{
@@ -149,8 +353,117 @@ background-color:black !important;
     background-position:center;
 	height:100vh;
     margin-top: -24vh;
-	margin-left:23vw;
+	margin-left:18vw;
 	
+}
+
+@media(max-width:1020px){
+    .bottle{
+        margin-left: 36%;
+    }
+
+    #flavor5{
+        margin-left: 29%;
+    }
+    #flavor10{
+        margin-left: 35%;
+    }
+}
+@media(max-width:770px){
+    .bottle{
+        margin-left: 33%;
+    }
+    #flavor5{
+        margin-left: 20%;
+    }
+    
+    #flavor2{
+        margin-left: 25%; 
+    }
+    #flavor8{
+        margin-left: 35%;
+    }
+    #flavor10{
+        margin-left: 30%;
+    }
+   
+}
+@media(max-width:610px){
+    .bottle{
+        margin-left: 30%;
+    }
+     #flavor5{
+        margin-left: 15%;
+    }
+    #flavor8{
+         margin-left: 33%;
+    }
+
+}
+
+
+@media(max-width:1000px){
+    .inst2{
+        margin-left: 36vw;
+    }
+    #flavor2{
+        margin-left: 30%; 
+    }
+}
+@media(max-width:650px){
+    .inst2{
+        margin-left: 30vw;
+    }
+     #flavor2{
+        margin-left: 20%; 
+    }
+}
+@media(max-width:500px){
+    .inst2{
+        margin-left: 20vw;
+    }
+     #flavor10{
+        margin-left: 25%;
+    }
+     #flavor2{
+        margin-left: 10%; 
+    }
+     #flavor5{
+        margin-left: 10%;
+    }
+    #flavor8{
+        margin-left: 28%;
+    }
+}
+@media(max-width:440px){
+    .inst2{
+        margin-left: 15vw;
+    }
+    .bottle{
+        margin-left: 15%;
+    }
+     #flavor2{
+        margin-left: 5%; 
+    }
+     #flavor5{
+        margin-left: 0%;
+    }
+    #flavor8{
+        margin-left: 18%;
+    }
+    #flavor10{
+        margin-left: 15%;
+    }
+}
+@media(max-width:420px){
+    #flavor5{
+        margin-left: -8%;
+    }
+}
+@media(min-width:916px){
+    .drinkpic{
+        margin-bottom: 4vh;
+    }
 }
 
 #custom-search-input {
@@ -158,6 +471,7 @@ background-color:black !important;
         margin-top: 10px;
         padding: 0;
     }
+
  
     #custom-search-input .search-query {
         padding-right: 3px;
@@ -189,3 +503,21 @@ background-color:black !important;
     }
  
     .search-query:focus + button {z-index: 3; }
+
+    .carousel{
+    // background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto;
+    color:white;
+    margin-left: 50vw;
+    margin-top: 25vh;
+    /* Align slide image horizontally center */
+}
+.bs-example{
+    margin: 20px;
+}

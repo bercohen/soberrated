@@ -1,14 +1,31 @@
 
 
 
-<div class>
-<h2 class ="inst1"><%=@result["drinks"][0]["strDrink"]%></h2>
+<div class="container-fluid">
 
-<table id="bev2">
-		<th>Ingrediant</th>
-		<th>Measurement</th>
-	</tr>
+
+<div class="row">
 	
+	<div class="col-sm-5">
+		<h2 class ="inst1"><%=@result["drinks"][0]["strDrink"]%></h2>
+	</div>
+	<div class="col-sm-3">
+		<img src=<%=@result["drinks"][0]["strDrinkThumb"]%> class="drinkpic"> 
+	</div>
+</div>
+
+	<div class= "col-sm-7"> <table class="bev2">
+		<tr>
+			<th>Ingrediant</th>
+			<th>Measurement</th>
+		</tr>
+	</div>
+
+<!-- <div class ="row">
+
+	<hr class = "col-xs-3 recipe">
+</div>
+	 -->
 		<%@result["drinks"].each do |key|%>
 	<tr>
 		<td><%=key["strIngredient1"]%></td>
@@ -50,9 +67,10 @@
 	<%end%>
 </table>	
  
-<h2 class="inst1">Instructions</h2>
-<div class="inst">
-<%=@result["drinks"][0]["strInstructions"]%>
-</div>
-<img src=<%=@result["drinks"][0]["strDrinkThumb"]%> class="drinkpic" class="img-fluid" alt="Responsive image"> 
+		<h2 class="inst1">Instructions</h2>
+		<div class="inst">
+			<%=@result["drinks"][0]["strInstructions"]%>
+		</div>
+	
+	</div>
 </div>
