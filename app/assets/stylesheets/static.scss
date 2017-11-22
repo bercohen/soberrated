@@ -1,8 +1,8 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@import 'bootstrap';
-@import 'bootstrap-sprockets';
+// @import 'bootstrap';
+// @import 'bootstrap-sprockets';
 
  @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
@@ -506,18 +506,18 @@ hr{
 
     .carousel{
     // background: #2f4357;
-    margin-top: 20px;
-}
-.carousel .item{
-    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
-}
-.carousel .item img{
-    margin: 0 auto;
-    color:white;
-    margin-left: 50vw;
-    margin-top: 25vh;
+            margin-top: 20px;
+    }
+    .carousel .item{
+            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    }
+    .carousel .item img{
+            margin: 0 auto;
+            color:white;
+            margin-left: 50vw;
+            margin-top: 25vh;
     /* Align slide image horizontally center */
-}
-.bs-example{
-    margin: 20px;
-}
+        }
+    .bs-example{
+             margin: 20px;
+    }
