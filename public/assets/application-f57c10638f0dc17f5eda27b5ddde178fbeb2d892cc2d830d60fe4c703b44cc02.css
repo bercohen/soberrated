@@ -1,0 +1,567 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+/* line 10, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+body {
+  background-color: black !important;
+}
+
+/* line 15, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+a {
+  color: white !important;
+}
+
+/* line 18, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+a:hover {
+  text-decoration: none !important;
+  color: #337ab7 !important;
+}
+
+/* line 23, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+td, th {
+  padding: 2.5vh;
+  font-size: 20px;
+}
+
+@media (min-width: 440px) {
+  /* line 28, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  hr {
+    display: none;
+  }
+
+  /* line 31, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .inst3 {
+    margin-bottom: 5vw;
+  }
+}
+/* line 35, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+hr {
+  color: white;
+}
+
+/* line 43, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.home {
+  margin-left: 10%;
+  color: white;
+}
+
+/* line 48, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.recipe {
+  margin-left: 4vw;
+}
+
+/* line 53, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.drinkpic {
+  height: 500px;
+  width: 500px;
+  border-radius: 10%;
+  border: 1px;
+  border-color: #fe146a;
+}
+
+/* line 62, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.drinkpic2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  border: 1px;
+  border-color: #fe146a;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 915px) {
+  /* line 74, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .drinkpic {
+    height: 400px;
+    width: 400px;
+  }
+
+  /* line 79, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bev2 {
+    margin-top: -280px !important;
+  }
+}
+@media (max-width: 770px) {
+  /* line 87, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .drinkpic {
+    height: 90%;
+    width: 90%;
+  }
+
+  /* line 92, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bev2 {
+    margin: 10px !important;
+  }
+
+  /* line 98, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .ct {
+    margin-left: 20vw !important;
+    width: 350px;
+  }
+}
+/* line 104, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.sob {
+  font-family: cursive;
+  font-size: 100px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  /* line 114, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .sob {
+    font-size: 75px;
+  }
+
+  /* line 118, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .ct {
+    height: 80vh !important;
+    margin-top: -15vh !important;
+    margin-left: 10vw !important;
+  }
+}
+@media (max-width: 450px) {
+  /* line 127, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .sob {
+    font-size: 60px;
+  }
+
+  /* line 130, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .ct {
+    width: 75% !important;
+  }
+}
+/* line 135, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.bottle {
+  position: relative;
+  width: 40vh;
+  height: 68vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-left: 38.5%;
+}
+
+/* line 155, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle1 {
+  background-image: url("vodka.png");
+}
+
+/* line 164, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle2 {
+  background-image: url("bourbon.png");
+}
+
+/* line 171, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle3 {
+  background-image: url("scotch.png");
+}
+
+/* line 178, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle4 {
+  background-image: url("rum.png");
+}
+
+/* line 184, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle5 {
+  background-image: url("gin.png");
+}
+
+/* line 191, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bottle6 {
+  background-image: url("tequila2.png");
+}
+
+/* line 197, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor1 {
+  background-image: url("orange2.png");
+  background-size: contain;
+}
+
+/* line 205, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor2 {
+  background-image: url("lemon.png");
+  background-size: contain;
+  width: 67vh;
+  margin-left: 34%;
+}
+
+/* line 213, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor3 {
+  background-image: url("pineapple5.png");
+  background-size: contain;
+}
+
+/* line 221, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor4 {
+  background-image: url("lime5.png");
+  background-size: contain;
+}
+
+/* line 228, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor5 {
+  background-image: url("apple5.png");
+  background-size: contain;
+  width: 60vh;
+  margin-left: 31%;
+}
+
+/* line 236, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor6 {
+  background-image: url("sugar2.png");
+  background-size: contain;
+}
+
+/* line 242, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor7 {
+  background-image: url("bitters.png");
+  background-size: contain;
+}
+
+/* line 248, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor8 {
+  background-image: url("sprite3.png");
+  background-size: cover;
+  margin-left: 39%;
+}
+
+/* line 256, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor9 {
+  background-image: url("coke.png");
+  background-size: cover;
+}
+
+/* line 262, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#flavor10 {
+  background-image: url("gingerale2.png");
+  background-size: contain;
+}
+
+/* line 271, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.list {
+  color: white;
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+/* line 279, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#bev {
+  color: white;
+  margin-left: 30%;
+}
+
+/* line 283, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.bev2 {
+  color: white;
+  margin-left: 2vw;
+  margin-top: -350px;
+}
+
+/* line 290, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.rand {
+  color: white;
+  margin-left: 30%;
+  font-size: 40px;
+}
+
+/* line 296, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.inst1 {
+  color: #fe146a;
+  font-family: cursive;
+  margin-left: 2vw;
+  font-size: 40px;
+}
+
+/* line 304, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.inst2 {
+  color: #fe146a;
+  font-family: cursive;
+  margin-left: 38vw;
+  font-size: 40px;
+}
+
+/* line 312, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.inst3 {
+  color: #fe146a;
+  font-family: cursive;
+  margin-left: 12%;
+  font-size: 40px;
+}
+
+/* line 324, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.inst {
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  margin-left: 2vw;
+  max-width: 90vw;
+  line-height: 50px;
+}
+
+/* line 334, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.flavor {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 50px;
+  position: inline-block;
+}
+
+@media (max-width: 768px) {
+  margin-left: 30vw !important;
+}
+/* line 349, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.ct {
+  background-image: url("cocktail2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24vh;
+  margin-left: 18vw;
+}
+
+@media (max-width: 1020px) {
+  /* line 361, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bottle {
+    margin-left: 36%;
+  }
+
+  /* line 365, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: 29%;
+  }
+
+  /* line 368, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor10 {
+    margin-left: 35%;
+  }
+}
+@media (max-width: 770px) {
+  /* line 373, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bottle {
+    margin-left: 33%;
+  }
+
+  /* line 376, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: 20%;
+  }
+
+  /* line 380, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor2 {
+    margin-left: 25%;
+  }
+
+  /* line 383, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor8 {
+    margin-left: 35%;
+  }
+
+  /* line 386, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor10 {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 610px) {
+  /* line 392, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bottle {
+    margin-left: 30%;
+  }
+
+  /* line 395, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: 15%;
+  }
+
+  /* line 398, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor8 {
+    margin-left: 33%;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 406, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .inst2 {
+    margin-left: 36vw;
+  }
+
+  /* line 409, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor2 {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 650px) {
+  /* line 414, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .inst2 {
+    margin-left: 30vw;
+  }
+
+  /* line 417, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor2 {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 500px) {
+  /* line 422, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .inst2 {
+    margin-left: 20vw;
+  }
+
+  /* line 425, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor10 {
+    margin-left: 25%;
+  }
+
+  /* line 428, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor2 {
+    margin-left: 10%;
+  }
+
+  /* line 431, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: 10%;
+  }
+
+  /* line 434, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor8 {
+    margin-left: 28%;
+  }
+}
+@media (max-width: 440px) {
+  /* line 439, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .inst2 {
+    margin-left: 15vw;
+  }
+
+  /* line 442, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .bottle {
+    margin-left: 15%;
+  }
+
+  /* line 445, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor2 {
+    margin-left: 5%;
+  }
+
+  /* line 448, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: 0%;
+  }
+
+  /* line 451, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor8 {
+    margin-left: 18%;
+  }
+
+  /* line 454, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor10 {
+    margin-left: 15%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 459, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  #flavor5 {
+    margin-left: -8%;
+  }
+}
+@media (min-width: 916px) {
+  /* line 464, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+  .drinkpic {
+    margin-bottom: 4vh;
+  }
+}
+/* line 469, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#custom-search-input {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+/* line 476, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 489, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #D9230F;
+}
+
+/* line 505, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.search-query:focus + button {
+  z-index: 3;
+}
+
+/* line 507, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.carousel {
+  margin-top: 20px;
+}
+
+/* line 511, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.carousel .item {
+  min-height: 280px;
+  /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+/* line 514, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.carousel .item img {
+  margin: 0 auto;
+  color: white;
+  margin-left: 50vw;
+  margin-top: 25vh;
+  /* Align slide image horizontally center */
+}
+
+/* line 521, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/static.scss */
+.bs-example {
+  margin: 20px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 19, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/application.scss */
+td, th {
+  padding: 8px;
+  font-size: 18px;
+}
+
+/* line 24, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/application.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 28, /Users/Bercohen/wdi-jan/soberrated/soberrated/app/assets/stylesheets/application.scss */
+.carousel-indicators {
+  bottom: -60px;
+}
