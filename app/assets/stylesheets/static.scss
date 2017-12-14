@@ -329,6 +329,15 @@ hr{
     margin-left: 2vw;
    max-width: 90vw;
    line-height: 50px;;
+   margin-bottom: 25px;
+}
+.about1{
+    color:white;
+    font-size: 20px;
+    margin-left: 2vw;
+   max-width: 60vw;
+   line-height: 50px;;
+   // margin-bottom: 10px;
 }
 
 
@@ -471,6 +480,7 @@ hr{
         margin:0;
         margin-top: 10px;
         padding: 0;
+      
     }
 
  
@@ -479,6 +489,7 @@ hr{
         padding-right: 4px \9;
         padding-left: 3px;
         padding-left: 4px \9;
+        
         /* IE7-8 doesn't have border-radius, so don't indent the padding */
  
         margin-bottom: 0;

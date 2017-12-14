@@ -42,8 +42,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
         
-            <li><%=link_to 'Surprise me', random_path%></li>
-            <li><%=link_to 'What do you like to drink?', mix_path%></li>
+            <li><%=link_to 'Discover', random_path%></li>
+            <li><%=link_to "What's in the kitchen?", mix_path%></li>
           
           </ul>
         </li>
@@ -55,7 +55,7 @@
 
      <%=form_tag({:action => 'search',}, {:class =>  'navbar-form navbar-left'}) do%>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search" name="s">
+          <input type="text" class="form-control" placeholder="Search drink by name" name="s">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
      <%end%>
